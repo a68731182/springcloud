@@ -16,6 +16,7 @@ import javax.persistence.Id;
 // String name = depart.getName();
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "fieldHandler"})
 public class Depart {
+
     @Id  // 表示当前属性为自动建的表的主键
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // 主键自动递增
     private Integer id;
