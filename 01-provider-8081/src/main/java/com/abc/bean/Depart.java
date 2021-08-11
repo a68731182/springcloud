@@ -10,7 +10,7 @@ import javax.persistence.Id;
 
 @Data
 @Entity  // 使用自动建表
-// HttpMessageConverter   Jackson -> 完成Java对象与JSON数据间的转换工作
+// HttpMessageConverter   Jackson -> 完成Java对象与JSON数据间的转换工作111
 // JPA的默认实现是Hibernate，而Hibernate默认对于对象的查询是基于延迟加载的
 // Depart depart = service.findById(5);   这里的depart实际是一个javasist动态代理对象
 // String name = depart.getName();
