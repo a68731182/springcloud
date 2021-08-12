@@ -1,15 +1,15 @@
 server:
-  port: 8088
+  port: 8081
 
 spring:
-  # ÅäÖÃspring data jpa
+  # ï¿½ï¿½ï¿½ï¿½spring data jpa
   jpa:
-    generate-ddl: true # Ö¸¶¨ÊÇ·ñÔÚspringÈİÆ÷Æô¶¯Ê±´´½¨±í£¬Ä¬ÈÏfalse
-    show-sql: true # Ö¸¶¨ÔÚ¿ØÖÆÌ¨ÊÇ·ñÏÔÊ¾SQLÓï¾ä£¬Ä¬ÈÏfalse
+    generate-ddl: true # Ö¸ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½springï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½false
+    show-sql: true # Ö¸ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½Ç·ï¿½ï¿½ï¿½Ê¾SQLï¿½ï¿½ä£¬Ä¬ï¿½ï¿½false
 
     hibernate:
-      ddl-auto: none # Ö¸¶¨Ó¦ÓÃÖØÆôºó²»ÖØĞÂ¸üĞÂ±íÄÚÈİ
-  # ÅäÖÃÊı¾İÔ´
+      ddl-auto: none # Ö¸ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¸ï¿½ï¿½Â±ï¿½ï¿½ï¿½ï¿½ï¿½
+  # ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -17,7 +17,7 @@ spring:
     username: root
     password: 68731182
 
-# ÅäÖÃÈÕÖ¾
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾
 logging:
   pattern:
     console: level-%level %msg%n
@@ -25,6 +25,6 @@ logging:
   level:
     root: info
     org.hibernate: info
-    org.hibernate.type.descriptor.sql.BasicBinder: trace  # ÔÚshow-sqlÎªtrueÊ±ÏÔÊ¾SQLÖĞµÄ¶¯Ì¬²ÎÊıÖµ
-    org.hibernate.hql.internal.ast.exec.BasicExecutor: trace # ÔÚshow-sqlÎªtrueÊ±ÏÔÊ¾²éÑ¯½á¹û
+    org.hibernate.type.descriptor.sql.BasicBinder: trace  # ï¿½ï¿½show-sqlÎªtrueÊ±ï¿½ï¿½Ê¾SQLï¿½ĞµÄ¶ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½Öµ
+    org.hibernate.hql.internal.ast.exec.BasicExecutor: trace # ï¿½ï¿½show-sqlÎªtrueÊ±ï¿½ï¿½Ê¾ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½
     com.abc: debug
