@@ -23,7 +23,7 @@ public class SomeController {
     }
     @DeleteMapping("/del/{id}")
     public void deleteHandler(@PathVariable Integer id){
-        String url = SERVICE_PROVIDER + "/provider/depart/del";
+        String url = SERVICE_PROVIDER + "/provider/depart/del/"+id;
          restTemplate.delete(url);
     }
     @PutMapping("/update")
@@ -33,7 +33,7 @@ public class SomeController {
     }
     @GetMapping("/get/{id}")
     public Depart getByIdHandler(@PathVariable Integer id){
-        String url = SERVICE_PROVIDER + "/provider/depart/get";
+        String url = SERVICE_PROVIDER + "/provider/depart/get/"+id;
         return restTemplate.getForObject(url,Depart.class);
     }
     @GetMapping("/list")
