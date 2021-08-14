@@ -21,10 +21,31 @@ spring:
     name: abcmsc-provider-depart
 
 #客户端指定连接服务端地址
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8000/eureka
+#  instance:
+#    instance-id: abcmsc-provider-depart-8081
+
+#复杂配置
 eureka:
   client:
+    #指定区域
+    region: xxx
+    #指定区域中包含的地带zone
+    availability-zones:
+      xxx: aaa, bbb
     service-url:
-      defaultZone: http://localhost:8000/eureka
+      aaa: http://localhost:8000/eureka
+      bbb: http://localhost:8000/eureka
+    #指定要连接的注册中心的所在区域
+    fetch-remote-regions-registry: xxx
+info:
+  auth: Author
+  app.name: name
+  company.name: www.baidu.com
+  company.addr: 天津市静海区
 # 配置日志
 logging:
   pattern:
@@ -36,3 +57,4 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: trace  # 在show-sql为true时显示SQL中的动态参数值
     org.hibernate.hql.internal.ast.exec.BasicExecutor: trace # 在show-sql为true时显示查询结果
     com.abc: debug
+
