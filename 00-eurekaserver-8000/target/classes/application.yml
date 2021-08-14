@@ -1,0 +1,9 @@
+server:
+  port: 8000
+eureka:
+  client:
+    register-with-eureka: false # 指定当前主机是否需要向Eureka Server注册自己
+    fetch-registry: false       # 指定当前主机是否需要从Eureka Server下载服务注册表
+    service-url:
+      defaultZone: http://localhost:8000/eureka   #\u66B4\u9732\u6CE8\u518C\u4E2D\u5FC3\u5730\u5740
+

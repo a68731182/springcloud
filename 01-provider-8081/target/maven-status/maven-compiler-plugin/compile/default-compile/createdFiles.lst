@@ -1,0 +1,6 @@
+com\abc\service\DepartService.class
+com\abc\bean\Depart.class
+com\abc\controller\DepartController.class
+com\abc\repository\DepartRepository.class
+com\abc\ApplicationProvider8081.class
+com\abc\service\DepartServiceImpl.class
