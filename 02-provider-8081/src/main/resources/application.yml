@@ -27,7 +27,10 @@ eureka:
       defaultZone: http://localhost:8000/eureka
   instance:
     instance-id: abcmsc-provider-depart-8081
-
+    #设置服务器向注册中心发送一次心跳时间:秒
+    lease-renewal-interval-in-seconds: 1
+    #注册中心认为服务的失效时间,失效后剔除服务:秒
+    lease-expiration-duration-in-seconds: 3
 #复杂配置
 #eureka:
 #  client:

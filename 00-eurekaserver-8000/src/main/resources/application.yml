@@ -6,4 +6,12 @@ eureka:
     fetch-registry: false       # 指定当前主机是否需要从Eureka Server下载服务注册表
     service-url:
       defaultZone: http://localhost:8000/eureka   #当前Eureka Server对外暴露的服务地址
+  server:
+    #自我保护机制开关,默认是开启状态不建议关闭
+    enable-self-preservation: false
+    #指定自我保护机制开启阈值
+    #renewal-percent-threshold: 0.75
+    #剔除不可用服务所需时间
+    eviction-interval-timer-in-ms: 4000
+
 
