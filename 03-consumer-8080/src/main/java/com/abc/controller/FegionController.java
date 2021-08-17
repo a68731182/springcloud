@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//Fegiong
+//基于Feign代理消费
 @RestController
 @RequestMapping("/consumer/depart")
 public class FegionController {

@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
-
+//基于restTemplate的控制层
 @RestController //Controller, RestController的共同点都是用来表示Spring某个类的是否可以接收HTTP请求
                // @Controller+@ResponseBody    返回页面JSON XML或自定义mediaType内容到页面
                // @Controller
-@RequestMapping("/consumer/depart")
+@RequestMapping("/consumer/olddepart")
 public class SomeController {
     @Autowired
     private RestTemplate restTemplate;
