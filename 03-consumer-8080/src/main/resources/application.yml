@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+#注册服务
+spring:
+  application:
+    name: abcmsc-consumer-depart
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+
+management:
+  #开启监控终端
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  #开启shutdown监控 等于关闭服务器 服务下架
+  endpoint:
+    shutdown:
+      enabled: true
