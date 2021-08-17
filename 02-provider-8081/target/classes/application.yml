@@ -61,3 +61,13 @@ logging:
     org.hibernate.hql.internal.ast.exec.BasicExecutor: trace # 在show-sql为true时显示查询结果
     com.abc: debug
 
+management:
+  #开启监控终端
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  #开启shutdown监控 等于关闭服务器 服务下架
+  endpoint:
+    shutdown:
+      enabled: true
