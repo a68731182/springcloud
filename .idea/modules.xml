@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/00-eurekaserver-8000/00-eurekaserver-8000.iml" filepath="$PROJECT_DIR$/00-eurekaserver-8000/00-eurekaserver-8000.iml" />
+      <module fileurl="file://$PROJECT_DIR$/00-eurekaserver-8100/00-eurekaserver-8100.iml" filepath="$PROJECT_DIR$/00-eurekaserver-8100/00-eurekaserver-8100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/00-eurekaserver-8200/00-eurekaserver-8200.iml" filepath="$PROJECT_DIR$/00-eurekaserver-8200/00-eurekaserver-8200.iml" />
+      <module fileurl="file://$PROJECT_DIR$/00-eurekaserver-8300/00-eurekaserver-8300.iml" filepath="$PROJECT_DIR$/00-eurekaserver-8300/00-eurekaserver-8300.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-consumer-8080/01-consumer-8080.iml" filepath="$PROJECT_DIR$/01-consumer-8080/01-consumer-8080.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-provider-8081/01-provider-8081.iml" filepath="$PROJECT_DIR$/01-provider-8081/01-provider-8081.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-consumer-8080/02-consumer-8080.iml" filepath="$PROJECT_DIR$/02-consumer-8080/02-consumer-8080.iml" />
