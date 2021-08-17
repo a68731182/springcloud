@@ -24,7 +24,8 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8000/eureka
+      #defaultZone: http://localhost:8000/eureka
+      defaultZone: http://eureka8100.com:8100/eureka,http://eureka8200.com:8200/eureka,http://eureka8300.com:8300/eureka  #集群
   instance:
     instance-id: abcmsc-provider-depart-8081
     #设置服务器向注册中心发送一次心跳时间:秒
