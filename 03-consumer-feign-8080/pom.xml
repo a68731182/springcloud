@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>com.abc</groupId>
-    <artifactId>03-consumer-8080</artifactId>
+    <artifactId>03-consumer-feign-8080</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
