@@ -9,7 +9,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8000/eureka
-
+#配置服务上下线
 management:
   #开启监控终端
   endpoints:
@@ -20,3 +20,18 @@ management:
   endpoint:
     shutdown:
       enabled: true
+#设置Feign代理客户端属性
+feign:
+  client:
+    default:
+         connectTimeout: 5000 #feign客户端连接提供者的超时时间
+         readTimeout: 5000   #feign客户端在连接上客户端后,向提供者提交请求的超时时间
+  compression:
+    request:
+      enabled: true           #请求压缩
+      mime-types: text/xml,application/xml,application/json  #请求类型
+      min-request-size: 2048   #请求文件大小  超过2048进行压缩
+    response:
+      enabled: true        #响应压缩
+      mime-types: text/xml,application/xml,application/json  #请求类型
+      min-request-size: 2048   #请求文件大小  超过2048进行压缩
