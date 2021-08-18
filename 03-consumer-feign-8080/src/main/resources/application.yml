@@ -35,3 +35,7 @@ feign:
       enabled: true        #响应压缩
       mime-types: text/xml,application/xml,application/json  #请求类型
       min-request-size: 2048   #请求文件大小  超过2048进行压缩
+# 修改负载均衡策略为：随机策略
+#abcmsc-provider-depart:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
