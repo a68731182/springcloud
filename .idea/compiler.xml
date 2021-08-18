@@ -9,10 +9,12 @@
         <module name="02-provider-8081" />
         <module name="00-eurekaserver-8300" />
         <module name="00-eurekaserver-8100" />
-        <module name="02-consumer-8080" />
+        <module name="03-consumer-feign-8080" />
+        <module name="00-eurekaserver-8000" />
         <module name="01-provider-8081" />
         <module name="00-eurekaserver-8200" />
-        <module name="00-eurekaserver-8000" />
+        <module name="02-consumer-8080" />
+        <module name="03-provider-8081" />
         <module name="01-consumer-8080" />
       </profile>
     </annotationProcessing>
@@ -25,6 +27,8 @@
       <module name="01-provider-8081" target="1.8" />
       <module name="02-consumer-8080" target="1.8" />
       <module name="02-provider-8081" target="1.8" />
+      <module name="03-consumer-feign-8080" target="1.8" />
+      <module name="03-provider-8081" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -37,6 +41,8 @@
       <module name="01-provider-8081" options="-parameters" />
       <module name="02-consumer-8080" options="-parameters" />
       <module name="02-provider-8081" options="-parameters" />
+      <module name="03-consumer-feign-8080" options="-parameters" />
+      <module name="03-provider-8081" options="-parameters" />
     </option>
   </component>
 </project>

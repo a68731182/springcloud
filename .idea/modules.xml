@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/01-provider-8081/01-provider-8081.iml" filepath="$PROJECT_DIR$/01-provider-8081/01-provider-8081.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-consumer-8080/02-consumer-8080.iml" filepath="$PROJECT_DIR$/02-consumer-8080/02-consumer-8080.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-provider-8081/02-provider-8081.iml" filepath="$PROJECT_DIR$/02-provider-8081/02-provider-8081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-consumer-feign-8080/03-consumer-feign-8080.iml" filepath="$PROJECT_DIR$/03-consumer-feign-8080/03-consumer-feign-8080.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-provider-8081/03-provider-8081.iml" filepath="$PROJECT_DIR$/03-provider-8081/03-provider-8081.iml" />
     </modules>
   </component>
 </project>
