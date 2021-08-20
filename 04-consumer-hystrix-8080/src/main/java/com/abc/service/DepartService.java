@@ -13,6 +13,7 @@ import java.util.List;
 
 // 指定当前为Feign客户端，参数为提供者的微服务名称 指定要连接的服务器和降级类
 @FeignClient(value = "abcmsc-provider-depart",fallbackFactory = DepartFallBackFactory.class)
+//方式二：@FeignClient(value = "abcmsc-provider-depart",fallback = DepartFallBackFactory.class)
 @RequestMapping("/provider/depart")
 public interface DepartService {
     @PostMapping("/save")
