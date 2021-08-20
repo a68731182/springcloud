@@ -3,6 +3,7 @@ package com.abc.controller;
 import com.abc.bean.Depart;
 import com.abc.service.DepartService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +29,7 @@ public class FegionController {
     public boolean updateHandler(@RequestBody Depart depart) {
         return service.modifyDepart(depart);
     }
-    @HystrixCommand(fallbackMethod="method")
+    @HystrixCommand(fallbackMethod="method",commandProperties =@HystrixProperty(name= "execution.isolation.thread.timeoutInMilliseconds",value = "2000"))
     @GetMapping("/get/{id}")
     public Depart getByIdHandler(@PathVariable("id") int id) {
         return service.getDepartById(id);
