@@ -26,6 +26,10 @@ feign:
     default:
          connectTimeout: 5000 #feign客户端连接提供者的超时时间
          readTimeout: 5000   #feign客户端在连接上客户端后,向提供者提交请求的超时时间
+  #开启对hystrix的支持
+  hystrix:
+    enabled: true
+
   compression:
     request:
       enabled: true           #请求压缩

@@ -11,8 +11,8 @@ import java.util.List;
 // 3)Feign接口中的方法返回值类型，方法参数要求与业务接口中的相同
 // 4)接口上与方法上的Mapping的参数URI要与提供者处理器相应方法上的Mapping的URI相同
 
-// 指定当前为Feign客户端，参数为提供者的微服务名称
-@FeignClient("abcmsc-provider-depart")
+// 指定当前为Feign客户端，参数为提供者的微服务名称 指定要连接的服务器和降级类
+@FeignClient(value = "abcmsc-provider-depart",fallbackFactory = DepartFallBackFactory.class)
 @RequestMapping("/provider/depart")
 public interface DepartService {
     @PostMapping("/save")
