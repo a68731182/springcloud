@@ -15,7 +15,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        #include: "*"
+        include: hystrix.stream  # 开启actuator的hystrix.stream监控终端
   #开启shutdown监控 等于关闭服务器 服务下架
   endpoint:
     shutdown:

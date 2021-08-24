@@ -18,6 +18,11 @@
         <spring-cloud.version>Hoxton.SR1</spring-cloud.version>
     </properties>
     <dependencies>
+        <!-- hystrix-dashboard依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+        </dependency>
         <!--hyxtrix 依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

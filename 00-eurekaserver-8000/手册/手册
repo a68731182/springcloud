@@ -1,0 +1,12 @@
+03-04:ribbon 负载均衡默认遵循轮询的方式进行
+03-05:负载均衡自定义策略 @Configure = @Controller +@Bean  在springboot项目启动注入bean
+04-01:@component注入的三个衍生注解代表不同层的注入
+      @Repository(“名称”)：dao层
+      @Service(“名称”)：service层
+      @Controller(“名称”)：web层
+04-02:  增加相关jar包 ->
+        增加服务降级类实现FallBackFactory接口->
+        配置文件新增 feign对hystrix的支持 ->
+        控制层注解 增加参数fallbackFactory 指定要连接的服务器和降级类
+
+
