@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/03-provider-8082/pom.xml" />
         <option value="$PROJECT_DIR$/03-provider-8083/pom.xml" />
         <option value="$PROJECT_DIR$/03-provider-8084/pom.xml" />
+        <option value="$PROJECT_DIR$/04-consumer-hystrix-8080/pom.xml" />
       </list>
     </option>
   </component>

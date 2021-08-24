@@ -9,6 +9,7 @@
         <module name="01-consumer-8080" />
         <module name="acm-config" />
         <module name="03-consumer-feign-8080" />
+        <module name="04-consumer-hystrix-8080" />
         <module name="03-provider-8084" />
         <module name="03-provider-8083" />
         <module name="03-provider-8082" />
@@ -36,6 +37,7 @@
       <module name="03-provider-8082" target="1.8" />
       <module name="03-provider-8083" target="1.8" />
       <module name="03-provider-8084" target="1.8" />
+      <module name="04-consumer-hystrix-8080" target="1.8" />
       <module name="acm-config" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -54,6 +56,7 @@
       <module name="03-provider-8082" options="-parameters" />
       <module name="03-provider-8083" options="-parameters" />
       <module name="03-provider-8084" options="-parameters" />
+      <module name="04-consumer-hystrix-8080" options="-parameters" />
       <module name="acm-config" options="-parameters" />
     </option>
   </component>
