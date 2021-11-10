@@ -7,6 +7,6 @@
 04-02:  增加相关jar包 ->
         增加服务降级类实现FallBackFactory接口->
         配置文件新增 feign对hystrix的支持 ->
-        控制层注解 增加参数fallbackFactory 指定要连接的服务器和降级类
+        控制层注解 增加参数fallbackFactory 指定要连接的 服务 器和降级类
 
 
